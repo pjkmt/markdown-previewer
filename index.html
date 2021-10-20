@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Start Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- End Bootstrap CSS -->
+
+    <!-- Start Google Fonts Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <!-- End Google Fonts Style -->
+
+    <!-- Start Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- End Font Awesome -->
+
+    <!-- Start Markdown Previewer External Main CSS File -->
+    <link rel="stylesheet" href="assets/css/markdown-previewer-main-design.css">
+    <!-- End Markdown Previwer External Main CSS File -->
+
+    <!-- Start Dark Mode External CSS File -->
+    <link rel="stylesheet" href="assets/css/dark-mode-design.css">
+    <!-- End Dark Mode External CSS File -->
+
+    <!-- Start Tooltip External CSS File -->
+    <link rel="stylesheet" href="assets/css/tooltip-design.css">
+    <!-- End Tooltip External CSS File -->
+    
+    <title>Markdown Previewer by PJKMT</title>
+    
+    <!-- Start Marked JS Library External File -->
+    <script src="assets/js/marked.js"></script>
+    <!-- End Marked JS Library External File -->
+
+    <!-- Start Markdown Previewer Main JS File -->
+    <script src="assets/js/markdown-previewer-main-js.js"></script>
+    <!-- End Markdown Previewer Main JS File -->
+
+    <!-- Start Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- End Animate CSS CDN -->
+    
+</head>
+<body onload="setDefaultDocumentOnLoad()">
+    
+    <div class="container-fluid">        
+        <div class="row">
+            <!-- <div class="col text-center text-white bg-info"> -->
+            <div class="col text-center markdown-previewer-theme">
+                <!-- <h1>Hello World! God Bless :-)</h1> -->
+                <!-- <div class="tooltip">Hover Over Me
+                    <span class="tooltiptext">Tooltip Text</span>
+                </div> -->
+                <h1 class="animate__animated animate__bounce">Markdown Previewer by <span class="rounded border-2 border border-primary">PJKMT</span></h1>
+
+                <div class="dark-mode-container">
+                    <input type="checkbox" id="toggle">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- <div class="col-6 bg-primary"> -->
+                <div class="col-6 rounded border border-primary row-margin-left row-margin-right">
+                    <div id="header"><i class="fas fa-code"></i> The Markdown Previewer Code Editor</div>
+                    <div class="form-group" id="markdown-previewer-app">
+                        <textarea name="#" id="editor" class="form-control" onkeyup="displayUpdatedViewOfMarkdownPreviewer()" cols="50" rows="40"></textarea>
+                    </div>
+                </div>
+            <!-- <div class="col-6 bg-success"> -->
+                <div class="col-6 rounded border border-primary img-fluid">
+                <!-- <p>The Markdown Previewer</p> -->
+                <div id="header"><i class="fas fa-desktop"></i> The Markdown Previewer Screen</div>
+                <div id="preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Dark Mode External JS File -->
+    <script src="assets/js/dark-mode-js.js"></script>
+    <!-- End Dark Mode External JS File -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- FreeCodeCamp Test Suite CDN -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--  -->
+</body>
+</html>
